@@ -1,0 +1,18 @@
+[package]
+name = "rust_yeti"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-sqlite = "0.1.0"
+axum = { version = "0.6.20", features = ["http2", "tokio"] }
+leptos = "0.5.1"
+minijinja = { version = "1.0.9", features = ["builtins"] }
+serde = { version = "1.0.189", features = ["derive"] }
+serde_json = "1.0.107"
+tokio = { version = "1.33.0", features = ["full"] }
+tower-http = { version = "0.4.4", features = ["trace"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.17"
